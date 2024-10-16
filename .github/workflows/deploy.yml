@@ -31,7 +31,7 @@ jobs:
                 source: "*, !node_modules,!.vscode"
                 target: /var/www/app
             - name: "Lancement du projet"
-              uses: appleboy/scp-action@v0.1.7
+              uses: appleboy/ssh-action@v1.1.0
               with:
                 host: ${{ secrets.HOST }}
                 username: ${{ secrets.USERNAME }}
