@@ -16,7 +16,7 @@ jobs:
             - name: Installation de nodejs
               uses: actions/setup-node@v4
               with:
-                node-version: "20.17.0"
+                node-version: "20.18.0"
             - name: Installation des deps npms
               run: npm ci
             - name: "Lance le build"
