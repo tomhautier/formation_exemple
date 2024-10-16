@@ -22,7 +22,7 @@ jobs:
             - name: "Lance le build"
               run: npm run build
             - name: "Livrez le code en ssh"
-              uses: appleboy/scp-actions@v0.1.7
+              uses: appleboy/scp-action@v0.1.7
               with:
                 host: ${{ secrets.HOST }}
                 username: ${{ secrets.USERNAME }}
