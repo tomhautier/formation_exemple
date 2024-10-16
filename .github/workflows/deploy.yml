@@ -28,5 +28,5 @@ jobs:
                 username: ${{ secrets.USERNAME }}
                 port: ${{ secrets.PORT }}
                 key: ${{secrets.KEY}}
-                source: "out/*"
-                target: /var/www/html
+                source: "*, !node_modules,!.vscode"
+                target: /var/www/app
