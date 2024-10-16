@@ -39,4 +39,4 @@ jobs:
                 key: ${{secrets.KEY}}
                 script: |
                   cd /var/www/app
-                  npm run dev
+                  npm run start
